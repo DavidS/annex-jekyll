@@ -3,6 +3,9 @@ services:
   ssh:
     build: .
     privileged: true
+    environment:
+      - "SSH_PORT=${SSH_PORT}"
+      - "USERS=${USERS}"
     ports:
      - "${SSH_PORT}:${SSH_PORT}/tcp"
     volumes:
