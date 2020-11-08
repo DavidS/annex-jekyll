@@ -10,5 +10,5 @@ puts output
 
 system("bundle config set --local path ../gems")
 system("bundle install")
-system("bundle clean")
 system("JEKYLL_ENV=production bundle exec jekyll build --strict --trace --destination ../site --verbose --incremental")
+system("bundle clean")

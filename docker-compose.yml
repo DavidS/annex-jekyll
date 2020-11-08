@@ -11,5 +11,5 @@ services:
     volumes:
      - /sys/fs/cgroup:/sys/fs/cgroup:ro
      - /etc/ssh:/srv/secrets/ssh:ro
-     - /home:/home:ro
-     - /srv:/srv
+     - /home:/home:rw
+     - /srv:/srv:rw
